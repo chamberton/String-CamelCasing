@@ -1,4 +1,4 @@
-This is a swift repository provide various string extensions.
+This is a swift repository that provides various string extensions.
 
 ## Camel Casing
 ```swift
