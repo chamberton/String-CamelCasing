@@ -1,9 +1,9 @@
 //
 //  String+CamelCasingTests.swift
-//  MMI.IOS.CommonDevProjectTests
+//  String+ExtensionsTest.swift
 //
-//  Created by Serge Mbamba on 2018/07/11.
-//  Copyright © 2016 Momentum. All rights reserved.
+//  Created by Serge Mbamba on 2016/04/26.
+//  Copyright © 2016 Serge Mbamba. All rights reserved.
 //
 
 import XCTest
