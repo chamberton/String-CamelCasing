@@ -36,14 +36,14 @@
  
  extension String {
     
-    public func hasCaseInsenstivePrefix(string: String) -> Bool {
+    public func hasInsenstivePrefix(string: String) -> Bool {
         guard let range = range(of: string, options:[.caseInsensitive]) else {
             return false
         }
         return range.lowerBound == startIndex
     }
     
-    public func hasCaseInsenstiveSuffix(string: String) -> Bool {
+    public func hasInsenstiveSuffix(string: String) -> Bool {
         guard let range = range(of: string, options:[.caseInsensitive]) else {
             return false
         }
