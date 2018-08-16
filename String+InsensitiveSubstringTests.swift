@@ -7,17 +7,17 @@
 //
 
 func testThatCaseInsenstiveSubstringsAreCheckedCorrectly() {
-    XCTAssertFalse("testIns".hasCaseInsenstivePrefix(string: "ere"))
-    XCTAssertFalse("testIns".hasCaseInsenstivePrefix(string: "tst"))
-    XCTAssertTrue("testIns".hasCaseInsenstivePrefix(string: "Test"))
-    XCTAssertTrue("testIns".hasCaseInsenstivePrefix(string: "TEST"))
-    XCTAssertTrue("TESTIns".hasCaseInsenstivePrefix(string: "tEst"))
+    XCTAssertFalse("testIns".hasInsenstivePrefix(string: "ere"))
+    XCTAssertFalse("testIns".hasInsenstivePrefix(string: "tst"))
+    XCTAssertTrue("testIns".hasInsenstivePrefix(string: "Test"))
+    XCTAssertTrue("testIns".hasInsenstivePrefix(string: "TEST"))
+    XCTAssertTrue("TESTIns".hasInsenstivePrefix(string: "tEst"))
     
-    XCTAssertFalse("testIns".hasCaseInsenstiveSuffix(string: "iss"))
-    XCTAssertFalse("testIns".hasCaseInsenstiveSuffix(string: "Isn"))
-    XCTAssertTrue("testIns".hasCaseInsenstiveSuffix(string: "TINS"))
-    XCTAssertTrue("testIns".hasCaseInsenstiveSuffix(string: "ins"))
-    XCTAssertTrue("TESTIns".hasCaseInsenstiveSuffix(string: "estINS"))
+    XCTAssertFalse("testIns".hasInsenstiveSuffix(string: "iss"))
+    XCTAssertFalse("testIns".hasInsenstiveSuffix(string: "Isn"))
+    XCTAssertTrue("testIns".hasInsenstiveSuffix(string: "TINS"))
+    XCTAssertTrue("testIns".hasInsenstiveSuffix(string: "ins"))
+    XCTAssertTrue("TESTIns".hasInsenstiveSuffix(string: "estINS"))
     
     XCTAssertTrue("téstčeska".containsDiacriticInsentive(string: "tce"))
     XCTAssertTrue("téstčeska".containsDiacriticInsentive(string: "est"))
